@@ -594,7 +594,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             break
             case 'sc': case 'script': {
-                reply('Script : https://github.com/DGXeon/CheemsBot-MD\n Dont Forget To Give Star\n\nYoutube : https://youtu.be/imFIX-Wrt3s\n Dont Forget To Subscribe')
+                reply('Script : error\n Dont Forget To Give Star\n\nYoutube : error\n Dont Forget To Subscribe')
             }
             break
             case 'chat': {
@@ -1210,12 +1210,12 @@ case 'antilink':
                     let btn = [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://github.com/DGXeon/CheemsBot-MD'
+                                    url: 'error'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Owner Number👤',
-                                    phoneNumber: '+91 690-9137-213'
+                                    phoneNumber: '94778115292'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1249,8 +1249,8 @@ case 'antilink':
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Script🔖',
-                                    url: 'https://github.com/DGXeon/CheemsBot-MD'
+                                    displayText: 'Gagana',
+                                    url: 'error'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2593,7 +2593,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "Owner Menu",
 										"description": "Displays The List Of Owner Features",
-										"rowId": `${prefix}ownermenu`
+										"rowId": `${prefix}downloadmenumenu`
 									}
 								]
 							},
@@ -2914,7 +2914,7 @@ case 'horoscopemenukcodk': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'error',
-                                    url: 'https://youtu.be/imFIX-Wrt3s'
+                                    url: 'error'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2971,7 +2971,7 @@ case 'nocategorymenu': {
 	*Misc Menu*
   
   ➙ ${prefix}ping
-  ➙ ${prefix}owner
+  ➙ ${prefix}downloadmenu
   ➙ ${prefix}donate
   ➙ ${prefix}menu / ${prefix}help / ${prefix}?
   ➙ ${prefix}delete
@@ -3093,7 +3093,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
-                                    url: 'https://youtu.be/imFIX-Wrt3s'
+                                    url: 'error'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3221,7 +3221,7 @@ break
   
   ꪶMisc Menuꫂ
   ➙ ${prefix}ping
-  ➙ ${prefix}owner
+  ➙ ${prefix}downloadmenu
   ➙ ${prefix}donate
   ➙ ${prefix}menu / ${prefix}help / ${prefix}?
   ➙ ${prefix}delete
