@@ -1533,21 +1533,31 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: ngen,
-                            hydratedFooterText: `Playing To ${text}`,
+                            hydratedFooterText: `Audio ${text}`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: '🥬Video Source Link🥬',
+                                    displayText: 'Join Group',
                                     url: `${anu.url}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎵Audio🎵',
+                                    displayText: 'Audio',
                                     id: `ytmp3 ${anu.url} 320kbps`
                                     }
                                 },{quickReplyButton: {
-                                    displayText: '🎥VIdeo🎥',
+                                    displayText: 'Video 360p',
                                     id: `ytmp4 ${anu.url} 360p`
-                                }
+                                    }
+                                },{
+                                   quickReplyButton: {
+                                    displayText: 'Video 720p',
+                                    id: `ytmp4 ${anu.url} 720p`
+                                    }
+                                },{
+                                   quickReplyButton: {
+                                    displayText: 'Video 1080p',
+                                    id: `ytmp4 ${anu.url} 1080p`
+                                    }
                             }]
                         }
                     }
@@ -2383,7 +2393,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'JF_FUNERAL',
@@ -2505,7 +2515,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     title: `Hi ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
-                    footerText: "_Cheems Bot-MD_",
+                    footerText: "_Jayarathne_Technical_",
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Group Features",
@@ -2636,7 +2646,7 @@ case 'grupmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'JF_FUNERAL',
@@ -2678,10 +2688,10 @@ case 'downloadmenu': {
                             hydratedContentText: okemenu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Error',
+                                    displayText: 'Thiricana',
                                     url: 'Error'
                                 }
                             }, {
@@ -2715,15 +2725,15 @@ case 'downloadmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     url: 'https://youtu.be/ids'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}play gagana`
                                 }
                             }]
@@ -2746,15 +2756,15 @@ case 'randommenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     url: 'oops'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}downloadmenu`
                                 }
                             }]
@@ -2778,15 +2788,15 @@ case 'funmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Error',
+                                    displayText: 'Thiricana',
                                     url: 'https://youtu.be/im3s'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}list`
                                 }
                             }]
@@ -2818,15 +2828,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     url: 'https://youtu.be/is'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}downlodmenu`
                                 }
                             }]
@@ -2852,15 +2862,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     url: 'error'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}downloadmenu`
                                 }
                             }]
@@ -2910,15 +2920,15 @@ case 'horoscopemenukcodk': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     url: 'error'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}play manabandu`
                                 }
                             }]
@@ -2948,15 +2958,15 @@ case 'convertmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     url: 'error'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}play nana vile`
                                 }
                             }]
@@ -2988,7 +2998,7 @@ case 'nocategorymenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Yerror',
@@ -2996,7 +3006,7 @@ case 'nocategorymenu': {
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'error',
+                                    displayText: 'Thiricana',
                                     id: `${prefix}playnanavile`
                                 }
                             }]
@@ -3025,7 +3035,7 @@ case 'databasemenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
@@ -3057,7 +3067,7 @@ case 'anonymouschatmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Sorry Babu',
@@ -3089,7 +3099,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
@@ -3126,7 +3136,7 @@ break
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube',
@@ -3267,7 +3277,7 @@ break
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Cheems Bot-MD`,
+                            hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube',
