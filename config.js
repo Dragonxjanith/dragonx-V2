@@ -22,7 +22,7 @@ global.APIKeys = {
 }
 
 //═══════[modification]════════\\
-global.owner = ['94778115292','94777611095'] //owner number, u can put multiple owner number, within quotations and seperated by comma.
+global.owner = ['94778115292','94777611095','94718775288','94786878718'.'94704166484','94714290151','94772601056','94764502264','94758040151','94702978512','94705516233'] //owner number, u can put multiple owner number, within quotations and seperated by comma.
 global.pemilik = ['94778115292'] //another owner number
 global.premium = ['94778115292'] //premium number
 global.pengguna = 'JF_BOT' //username
@@ -32,12 +32,12 @@ global.packname = 'JF BOT' //sticker package name
 global.author = 'By JF_BOT' //sticker author name
 global.sessionName = 'session' //session name
 global.prefa = ['#','!','/',''] //prefix
-global.sp = '⭔' //design
+global.sp = '🍂' //design
 global.mess = {
     success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
+    admin: 'This Feature Is Only For @Jayarathne!',
     botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner',
+    owner: 'This Feature Is Only For @Jayarathne',
     group: 'Feature Used Only For Groups!',
     private: 'Features Used Only For Private Chat!',
     bot: 'This feature in only for the bot number',
@@ -46,7 +46,7 @@ global.mess = {
 }
 global.limitawal = {
     premium: "Infinity", //premium user limit
-    free: 200 //free user limit
+    free: 2000 //free user limit
 }
 global.thumb = fs.readFileSync('./XeonMedia/cheemspic.jpg')
 
