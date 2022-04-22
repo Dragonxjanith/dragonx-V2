@@ -2461,7 +2461,28 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
                             hydratedFooterText: `Hi Sir ${pushname}
-I'm JF-BETA BOT
+I'm JF-BETA BOT 
+
+🍻 *ᴊᴀʏᴀʀᴀᴛʜɴᴇ sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ ᴀᴛ ,
+
+*🎋 ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ
+
+https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1
+
+*👻 ᴊғ ʙᴏᴛ sᴇʀᴠɪᴄᴇ
+
+https://chat.whatsapp.com/JE4Xmu58oQbBiuyonEjn4M
+
+*🍃 sᴇᴡ ǫᴜᴇᴇɴ (ʙʏ ᴋʀɪsʜᴀɴ)
+
+https://chat.whatsapp.com/EbH3web64lTExFrWunvGoN
+
+*⚘sᴇᴡ ǫᴜᴇᴇɴ 1 (ʙʏ ᴋʀɪsʜᴀɴ)
+
+https://chat.whatsapp.com/EWp6ie5mI1VAZqydj6BSga
+
+------------------------
+ᴘᴏᴡᴇʀᴅ ʙʏ ᴊғ ᴛᴇᴀᴍ  🍂
 
 
 ❏「 INFO BOT 🥀 」
