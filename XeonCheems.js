@@ -1561,7 +1561,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
             }
             
             break 
-            case 'song': case 'asong' : case 'aud' : case 'music' : case 's' : {
+            case 'song': case 'asong' : case 'audios' : case 'music' : case 's' : {
                 if (!text) throw `Example : ${prefix + command} Gota Gobbaya`
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -1659,6 +1659,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
             }
            
             break
+           
             
             
             
@@ -2576,7 +2577,7 @@ I'm JF-MD BOT
 
 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds :)
 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())} :)
-𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botnma}
+𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botnma}case 'menu
 𝗢𝘄𝗻𝗲𝗿  : @ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ
 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : 94778115292
 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ
@@ -2614,7 +2615,7 @@ Please Select Button Below ,
                             }, {
                                 quickReplyButton: {
                                     displayText: 'All Menu',
-                                    id: `${prefix}allmenu`
+                                    id: `${prefix}downloadmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
@@ -2632,10 +2633,9 @@ Please Select Button Below ,
                 }), { userJid: m.chat })
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 
-               {
-            const devsound = fs.readFileSync('./XeonMedia/menu.mp3')
+               const devsound = fs.readFileSync('./XeonMedia/menu.mp3') //u can change the music in XeonMedia folder
            XeonBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
-           }
+            
            
                 }
                 
@@ -2818,14 +2818,12 @@ case 'downloadmenu': {
 	okemenu = `
 	*Downloader Menu*
   
-   ➙ ${prefix} yt [name]
-  ➙ ${prefix} song [name]
-  ➙ ${prefix} video [name]
+  ➙ ${prefix}tiktoknowm [url]
   ➙ ${prefix}tiktokwm [url]
   ➙ ${prefix}tiktokmp3 [url]
   ➙ ${prefix}instagram [url]
   ➙ ${prefix}ig2 [url]
-  ➙ ${prefix}tiktoknowm [url]
+  ➙ ${prefix}igreels [url]
   ➙ ${prefix}igtv [url]
   ➙ ${prefix}twitter [url]
   ➙ ${prefix}twittermp3 [url]
@@ -3192,7 +3190,7 @@ case 'databasemenu': {
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
                                     url: 'https://youtu.#GOHOMEGOTA'
-                                }case 'allmenu
+                                }
                             }, {
                                 quickReplyButton: {
                                     displayText: '#GOHOMEGOTA',
