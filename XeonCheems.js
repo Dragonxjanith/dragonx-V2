@@ -2615,7 +2615,7 @@ Please Select Button Below ,
                             }, {
                                 quickReplyButton: {
                                     displayText: 'All Menu',
-                                    id: `${prefix}downloadmenu`
+                                    id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
