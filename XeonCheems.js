@@ -590,7 +590,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             break
 	    case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/94778115292 (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n⭔ Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n◮ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/94778115292 (Owner)\n\nDonate Me : \n\n◮ Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n◮ Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
@@ -890,7 +890,7 @@ let teks = `══✪〘 *:) Tag All* 〙✪══
  
  ➲ *Message : ${q ? q : 'blank'}*\n\n`
                 for (let mem of participants) {
-                teks += `⭔ @${mem.id.split('@')[0]}\n`
+                teks += `◮ @${mem.id.split('@')[0]}\n`
                 }
                 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -909,7 +909,7 @@ let teks = `══✪〘 *:) Tag All* 〙✪══
                 let anu = await styletext(text)
                 let teks = `Entered Text:  ${text}\n\n`
                 for (let i of anu) {
-                    teks += `⭔ *${i.name}* : ${i.result}\n\n`
+                    teks += `◮ *${i.name}* : ${i.result}\n\n`
                 }
                 reply(teks)
 	    }
@@ -1076,7 +1076,7 @@ break
             reply('Successfully Deleted Vote Session In This Group')
 	    }
             break
-               case 'group': case 'grup': {
+               case 'group': case 'grup' : {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1099,7 +1099,7 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
              if (args[0] === 'open'){
-                await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Edit Group Info`)).catch((err) => reply(jsonformat(err)))
+                await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Chat unmuted ;-)`)).catch((err) => reply(jsonformat(err)))
              } else if (args[0] === 'close'){
                 await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Close Edit Group Info`)).catch((err) => reply(jsonformat(err)))
              } else {
@@ -1209,32 +1209,29 @@ case 'antilink':
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
-                                    url: 'error'
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Owner Number👤',
+                                    displayText: 'Owner Number',
                                     phoneNumber: '94778115292'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '📶Bot Status📶',
+                                    displayText: 'Bot Status',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
-                                }
+                            
+                
                             }]
                       fatihgans = fs.readFileSync('./XeonMedia/cheemspic.jpg')
-                      let txt = `「 Cheems Bot Broadcast 」\n\n${text}`
+                      let txt = `「 JfBot-Md Broadcast 」\n\n${text}`
                       XeonBotInc.send5ButImg(i, txt, XeonBotInc.user.name, fatihgans, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1242,24 +1239,24 @@ case 'antilink':
             break
             case 'bc': case 'broadcast': case 'bcall': {
                 if (!isCreator) throw mess.owner
-                if (!text) throw `Where is the text?\n\nExample : ${prefix + command} cheems bot here`
+                if (!text) throw `Where is the text?\n\nExample : ${prefix + command} JfBot-Md here`
                 let anu = await store.chats.all().map(v => v.id)
                 reply(`Send Broadcast To ${anu.length} Chat\nIn ${anu.length * 1.5} second`)
 		for (let yoi of anu) {
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Gagana',
-                                    url: 'error'
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }
                             }]
                       fatihgans = fs.readFileSync('./XeonMedia/cheemspic.jpg')
-                      let txt = `「 Cheems Bot Broadcast 」\n\n${text}`
+                      let txt = `「 JfBot-Md Broadcast 」\n\n${text}`
                       XeonBotInc.send5ButImg(yoi, txt, `Broadcast By ${global.pengguna}`, fatihgans, btn)
 		}
 		reply('Broadcast Success')
@@ -1274,8 +1271,8 @@ case 'antilink':
                     let read = i.readTimestamp
                     let unread = i.receiptTimestamp
                     let waktu = read ? read : unread
-                    teks += `⭔ @${i.userJid.split('@')[0]}\n`
-                    teks += ` ┗━⭔ *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} ⭔ *Status :* ${read ? 'Read' : 'Unread'}\n\n`
+                    teks += `◮ @${i.userJid.split('@')[0]}\n`
+                    teks += ` ┗━◮ *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} ◮ *Status :* ${read ? 'Read' : 'Unread'}\n\n`
                 }
                 XeonBotInc.sendTextWithMentions(m.chat, teks, m)
             }
@@ -1310,7 +1307,7 @@ case 'antilink':
              case 'listonline': case 'onlinelist': case 'liston': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
-                    XeonBotInc.sendText(m.chat, 'Online List:\n\n' + online.map(v => '⭔ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+                    XeonBotInc.sendText(m.chat, 'Online List:\n\n' + online.map(v => '◮ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
@@ -1470,7 +1467,7 @@ case 'antilink':
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `⭔ No : ${no++}\n⭔ Type : ${i.type}\n⭔ Video ID : ${i.videoId}\n⭔ Title : ${i.title}\n⭔ Views : ${i.views}\n⭔ Duration : ${i.timestamp}\n⭔ Upload At : ${i.ago}\n⭔ Author : ${i.author.name}\n⭔ Url : ${i.url}\n\n─────────────────\n\n`
+                    teks += `◮ No : ${no++}\n◮ Type : ${i.type}\n◮ Video ID : ${i.videoId}\n◮ Title : ${i.title}\n◮ Views : ${i.views}\n◮ Duration : ${i.timestamp}\n◮ Upload At : ${i.ago}\n◮ Author : ${i.author.name}\n◮ Url : ${i.url}\n\n─────────────────\n\n`
                 }
                 XeonBotInc.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -1481,9 +1478,9 @@ case 'antilink':
                 google({'query': text}).then(res => {
                 let teks = `Google Search From : ${text}\n\n`
                 for (let g of res) {
-                teks += `⭔ *Title* : ${g.title}\n`
-                teks += `⭔ *Description* : ${g.snippet}\n`
-                teks += `⭔ *Link* : ${g.link}\n\n────────────────────────\n\n`
+                teks += `◮ *Title* : ${g.title}\n`
+                teks += `◮ *Description* : ${g.snippet}\n`
+                teks += `◮ *Link* : ${g.link}\n\n────────────────────────\n\n`
                 } 
                 reply(teks)
                 })
@@ -1511,21 +1508,22 @@ case 'antilink':
         })
         }
         break
-	    case 'play': case 'ytplay': {
-                if (!text) throw `Example : ${prefix + command} bts boy with luv`
+	    case 'play': case 'ytplay' : case 'yt' : case 'youtube' : case 'y' : {
+                if (!text) throw `Example : ${prefix + command} Gota Gobbaya`
                 let yts = require("yt-search")
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                     ngen = `
-⭔ Title : ${anu.title}
-⭔ Ext : Search
-⭔ ID : ${anu.videoId}
-⭔ Duration : ${anu.timestamp}
-⭔ Viewers : ${anu.views}
-⭔ Uploaded : ${anu.ago}
-⭔ Author : ${anu.author.name}
-⭔ Channel : ${anu.author.url}
-⭔ Description : ${anu.description}
+❐🍂JF_YT DOWNLOADER
+
+━━◮ᴛɪᴛʟᴇ ➼ ➼ *${anu.title}* ━━━
+━ ◮ᴅᴜʀᴀᴛɪᴏɴ ➼ ${anu.timestamp}
+━◮ᴠɪᴇᴡs ➼ ${anu.views}
+━◮ᴜᴘʟᴏᴀᴅᴇᴅ ➼ ${anu.ago}
+
+━◮ᴠɪᴅᴇᴏ ᴜʀʟ ➼ ${anu.url}
+
+➲ sᴇʟᴇᴄᴛ ғɪʟᴇ ᴛʏᴘᴇ ,
 `
 message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
                 template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -1533,45 +1531,147 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: ngen,
-                            hydratedFooterText: `Audio ${text}`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Join Group',
-                                    url: `${anu.url}`
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Audio',
-                                    id: `ytmp3 ${anu.url} 320kbps`
+                                    id: `ytmp3 ${anu.url} 128kbps`
                                     }
                                 },{quickReplyButton: {
-                                    displayText: 'Video 360p',
+                                    displayText: 'Video',
                                     id: `ytmp4 ${anu.url} 360p`
                                     }
-                                },{
-                                   quickReplyButton: {
-                                    displayText: 'Video 720p',
+                                },{quickReplyButton: {
+                                    displayText: 'Video 720p (Beta)',
                                     id: `ytmp4 ${anu.url} 720p`
                                     }
-                                },{
-                                   quickReplyButton: {
-                                    displayText: 'Video 1080p',
-                                    id: `ytmp4 ${anu.url} 1080p`
-                                    }
+                                    
+                                
+                              
                             }]
                         }
                     }
                 }), { userJid: m.chat, quoted: m })
                   XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
+            
+            break 
+            case 'song': case 'asong' : case 'audio' : case 'music' : case 's' : {
+                if (!text) throw `Example : ${prefix + command} Gota Gobbaya`
+                let yts = require("yt-search")
+                let search = await yts(text)
+                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+                    ngen = `
+❐ 🎧 JF_AUDIO DOWNLOADER
+
+━━◮ᴛɪᴛʟᴇ ➼ ➼ *${anu.title}* ━━━
+━ ◮ᴅᴜʀᴀᴛɪᴏɴ ➼ ${anu.timestamp}
+━◮ᴠɪᴇᴡs ➼ ${anu.views}
+━◮ᴜᴘʟᴏᴀᴅᴇᴅ ➼ ${anu.ago}
+
+━◮ᴠɪᴅᴇᴏ ᴜʀʟ ➼ ${anu.url}
+
+➲ sᴇʟᴇᴄᴛ ғɪʟᴇ ,
+`
+message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
+                template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            imageMessage: message.imageMessage,
+                            hydratedContentText: ngen,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
+                            hydratedButtons: [{
+                                urlButton: {
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Audio 128kbps',
+                                    id: `ytmp3 ${anu.url} 128kbps`
+                                    }
+                                },{quickReplyButton: {
+                                    displayText: 'Audio 320kbps',
+                                    id: `ytmp3 ${anu.url} 320kbps`
+                                    }
+                                
+                              
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat, quoted: m })
+                  XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            
+            break 
+            
+            
+            case 'video': case 'avideo' : case 'movie' : case 'vid' : case 'v' : {
+                if (!text) throw `Example : ${prefix + command} Gota Gobbaya`
+                let yts = require("yt-search")
+                let search = await yts(text)
+                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+                    ngen = `
+❐ 🎬 JF_VIDEO DOWNLOADER
+
+━━◮ᴛɪᴛʟᴇ ➼ ➼ *${anu.title}* ━━━
+━ ◮ᴅᴜʀᴀᴛɪᴏɴ ➼ ${anu.timestamp}
+━◮ᴠɪᴇᴡs ➼ ${anu.views}
+━◮ᴜᴘʟᴏᴀᴅᴇᴅ ➼ ${anu.ago}
+
+━◮ᴠɪᴅᴇᴏ ᴜʀʟ ➼ ${anu.url}
+
+➲ sᴇʟᴇᴄᴛ ғɪʟᴇ ,
+`
+message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
+                template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            imageMessage: message.imageMessage,
+                            hydratedContentText: ngen,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
+                            hydratedButtons: [{
+                                urlButton: {
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Video 360p',
+                                    id: `ytmp4 ${anu.url} 360p`
+                                    }
+                                },{quickReplyButton: {
+                                    displayText: 'video 720p (beta)',
+                                    id: `ytmp4 ${anu.url} 720p`
+                                    }
+                                
+                              
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat, quoted: m })
+                  XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+           
             break
+            
+            
+            
+            
+            
+            
 	    case 'ytmp3': case 'ytaudio': {
                 let { yta } = require('./lib/y2mate')
-                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 320kbps`
-                let quality = args[1] ? args[1] : '320kbps'
+                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMhb6Tccag%27 320kbps`
+                let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('Audio size is too big '+util.format(media))
-                XeonBotInc.sendImage(m.chat, media.thumb, `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolution : ${args[1] || '320kbps'}`, m)
+                XeonBotInc.sendImage(m.chat, media.thumb, `◮ Title : ${media.title}\n◮ File Size : ${media.filesizeF}\n◮ Url : ${isUrl(text)}\n◮ Ext : MP3\n◮ Resolution : ${args[1] || '128kbps'}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -1581,7 +1681,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('Video size is too big '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resololution : ${args[1] || '360p'}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `◮ Title : ${media.title}\n◮ File Size : ${media.filesizeF}\n◮ Url : ${isUrl(text)}\n◮ Ext : MP3\n◮ Resololution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
 	    case 'getmusic': {
@@ -1594,7 +1694,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 999999) return reply('Audio size is too big '+util.format(media))
-                XeonBotInc.sendImage(m.chat, media.thumb, `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolution : ${args[1] || '320kbps'}`, m)
+                XeonBotInc.sendImage(m.chat, media.thumb, `◮ Title : ${media.title}\n◮ File Size : ${media.filesizeF}\n◮ Url : ${isUrl(text)}\n◮ Ext : MP3\n◮ Resolution : ${args[1] || '320kbps'}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -1608,7 +1708,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `◮ Title : ${media.title}\n◮ File Size : ${media.filesizeF}\n◮ Url : ${isUrl(text)}\n◮ Ext : MP3\n◮ Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
             case 'pinterest': {
@@ -1616,7 +1716,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: '◮ Media Url : '+result }, { quoted: m })
             }
             break
             case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': {
@@ -1656,7 +1756,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.type}\n⭔ Detail : ${result.source}\n⭔ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    caption: `◮ Title : ${result.title}\n◮ Category : ${result.type}\n◮ Detail : ${result.source}\n◮ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
                     footer: XeonBotInc.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -1674,13 +1774,15 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 ]
                 let buttonMessage = {
                     image: { url: result.image },
-                    caption: `⭔ Title : ${result.title}\n⭔ Source : ${result.source}\n⭔ Media Url : ${result.image}`,
+                    caption: `◮ Title : ${result.title}\n◮ Source : ${result.source}\n◮ Media Url : ${result.image}`,
                     footer: XeonBotInc.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
+            
+            
             break
             case 'quotesanimekdksksksksk': case 'quoteanimexllzlzkl': {
 		let { quotesAnime } = require('./lib/scraper')
@@ -1735,7 +1837,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `⭔ *Name :* ${anu.message.nama}\n⭔ *Born :* ${anu.message.tgl_lahir}\n⭔ *Results :* ${anu.message.result}`, m)
+                XeonBotInc.sendText(m.chat, `◮ *Name :* ${anu.message.nama}\n◮ *Born :* ${anu.message.tgl_lahir}\n◮ *Results :* ${anu.message.result}`, m)
             }
             break
             case 'memancing1111': case 'fishing1111': {
@@ -1743,7 +1845,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_memancing_ikan(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `⭔ *Date :* ${anu.message.tgl_memancing}\n⭔ *Results :* ${anu.message.result}\n⭔ *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `◮ *Date :* ${anu.message.tgl_memancing}\n◮ *Results :* ${anu.message.result}\n◮ *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'masasubur111111': case 'fertiletimekekskdk': {
@@ -1751,7 +1853,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let [tgl, bln, thn, siklus] = text.split`,`
                 let anu = await primbon.masa_subur(tgl, bln, thn, siklus)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `⭔ *Hasil :* ${anu.message.result}\n⭔ *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `◮ *Hasil :* ${anu.message.result}\n◮ *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'zodiakjfjdkkd': case 'zodiackckdkdk': {
@@ -1786,14 +1888,14 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 
                 let anu = await primbon.zodiak(zodiac)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `⭔ *Zodiac :* ${anu.message.zodiak}\n⭔ *Number :* ${anu.message.nomor_keberuntungan}\n⭔ *Aroma :* ${anu.message.aroma_keberuntungan}\n⭔ *Planet :* ${anu.message.planet_yang_mengitari}\n⭔ *Flower :* ${anu.message.bunga_keberuntungan}\n⭔ *Color :* ${anu.message.warna_keberuntungan}\n⭔ *Rock :* ${anu.message.batu_keberuntungan}\n⭔ *Element :* ${anu.message.elemen_keberuntungan}\n⭔ *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n⭔ *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `◮ *Zodiac :* ${anu.message.zodiak}\n◮ *Number :* ${anu.message.nomor_keberuntungan}\n◮ *Aroma :* ${anu.message.aroma_keberuntungan}\n◮ *Planet :* ${anu.message.planet_yang_mengitari}\n◮ *Flower :* ${anu.message.bunga_keberuntungan}\n◮ *Color :* ${anu.message.warna_keberuntungan}\n◮ *Rock :* ${anu.message.batu_keberuntungan}\n◮ *Element :* ${anu.message.elemen_keberuntungan}\n◮ *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n◮ *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'shiondkskskso': {
                 if (!text) throw `Example : ${prefix + command} tikus\n\nNote : For Detail https://primbon.com/shio.htm`
                 let anu = await primbon.shio(text)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `⭔ *Results :* ${anu.message}`, m)
+                XeonBotInc.sendText(m.chat, `◮ *Results :* ${anu.message}`, m)
             }
             break
 	        case 'tiktok': case 'tiktoknowm': {
@@ -1869,7 +1971,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 if (!text) throw 'No Query Title'
                 replay(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/joox', { query: text }, 'apikey'))
-                let msg = await XeonBotInc.sendImage(m.chat, anu.result.img, `⭔ Title : ${anu.result.lagu}\n⭔ Album : ${anu.result.album}\n⭔ Singer : ${anu.result.penyanyi}\n⭔ Publish : ${anu.result.publish}\n⭔ Lyrics :\n${anu.result.lirik.result}`, m)
+                let msg = await XeonBotInc.sendImage(m.chat, anu.result.img, `◮ Title : ${anu.result.lagu}\n◮ Album : ${anu.result.album}\n◮ Singer : ${anu.result.penyanyi}\n◮ Publish : ${anu.result.publish}\n◮ Lyrics :\n${anu.result.lirik.result}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: anu.result.mp4aLink }, mimetype: 'audio/mpeg', fileName: anu.result.lagu+'.m4a' }, { quoted: msg })
             }
             break
@@ -1877,7 +1979,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 if (!text) throw 'No Query Title'
                 replay(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/soundcloud', { url: isUrl(text)[0] }, 'apikey'))
-                let msg = await XeonBotInc.sendImage(m.chat, anu.result.thumb, `⭔ Title : ${anu.result.title}\n⭔ Url : ${isUrl(text)[0]}`)
+                let msg = await XeonBotInc.sendImage(m.chat, anu.result.thumb, `◮ Title : ${anu.result.title}\n◮ Url : ${isUrl(text)[0]}`)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: anu.result.url }, mimetype: 'audio/mpeg', fileName: anu.result.title+'.m4a' }, { quoted: msg })
             }
             break
@@ -1916,11 +2018,11 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 XeonBotInc.sendMessage(m.chat, { audio: { url: anu.result.audio } }, { quoted: msg })
             }
             break
-	        case 'fbdlkxkxkx': case 'fbkckxkxk': case 'facebookjfkddkk': {
+	        case 'fb': case 'fbkckxkxk': case 'facebookjfkddkk': {
                 if (!text) throw 'Enter Query Link!'
                 replay(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
-                XeonBotInc.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `⭔ Title : ${anu.result.title}`}, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `◮ Title : ${anu.result.title}`}, { quoted: m })
             }
             break
 	        case 'pindlkxkdksk': case 'pinterestdlksksks': {
@@ -1943,11 +2045,11 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-⭔ Title : ${anu.title}
-⭔ Author : ${anu.author.name}
-⭔ Like : ${anu.like}
-⭔ Caption : ${anu.caption}
-⭔ Url : ${anu.media[0]}
+◮ Title : ${anu.title}
+◮ Author : ${anu.author.name}
+◮ Like : ${anu.like}
+◮ Caption : ${anu.caption}
+◮ Url : ${anu.media[0]}
 To download media, please click one of the buttons below or enter the ytmp3/ytmp4 command with the url above
 `,
 			footer: XeonBotInc.user.name,
@@ -1957,7 +2059,7 @@ To download media, please click one of the buttons below or enter the ytmp3/ytmp
 		    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 		} else if (anu.type == 'image') {
 		    anu.media.map(async (url) => {
-		        XeonBotInc.sendMessage(m.chat, { image: { url }, caption: `⭔ Title : ${anu.title}\n⭔ Author : ${anu.author.name}\n⭔ Like : ${anu.like}\n⭔ Caption : ${anu.caption}` }, { quoted: m })
+		        XeonBotInc.sendMessage(m.chat, { image: { url }, caption: `◮ Title : ${anu.title}\n◮ Author : ${anu.author.name}\n◮ Like : ${anu.like}\n◮ Caption : ${anu.caption}` }, { quoted: m })
 		    })
 		}
 	    }
@@ -2376,6 +2478,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
            const devsound = fs.readFileSync('./XeonMedia/botdev.mp3') //u can change the music in XeonMedia folder
            XeonBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
             }
+            
+            break 
+            
+            case 'Hi': case 'gagana' : case 'shit' : case 'sachi' : {
+            const devsound = fs.readFileSync('./XeonMedia/VoiceClip_hi.mp3') //u can change the music in XeonMedia folder
+           XeonBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
+           }
             break
                     case 'bug': case 'report': {
                     	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
@@ -2384,7 +2493,7 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break 
-case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'cheems': case 'doge':{
+case 'tes': case 'test': case 'ok': case 'bot': case 'robot': case 'cheems': case 'doge':{
                 anu = `Hi ${pushname}
 THIS IS JF_BETA BOT COMMAND LIST!! :-)`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -2393,7 +2502,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'JF_FUNERAL',
@@ -2450,7 +2559,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
 break
 
-            case 'list': case 'menu': case 'help': case '?': {
+            case 'list': case 'menu': case 'help': case 'alive': case 'cmd' : case 'panel' : case 'x' : case 'jf' : case 'alpha'  : {
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
@@ -2461,29 +2570,45 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
                             hydratedFooterText: `Hi Sir ${pushname}
-I'm JF-BETA BOT 
+I'm JF-MD BOT 
 
-❏「 INFO BOT 🥀 」
+❏「 JAYARATHNE_BOT-MD :) 」
 
-𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds :)
+𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())} :)
 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botnma}
-𝗢𝘄𝗻𝗲𝗿  : ${global.ownernma}
-𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+𝗢𝘄𝗻𝗲𝗿  : @ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ
+𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : 94778115292
+𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ
+𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Kali Linux , Android
 
+Your conevenience is our pleasure <3
 
-Please Select Button Below
+* Jf_team :
+
+Sithujaya (ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ)
+Nimesh (Jayarathne)
+Jayashan (Udantha)
+Krishan (Apsara)
+Vihaga (Mr.V)
+Gagana (Paraya)
+Dilshan (Sachi)
+Nenux
+Sathsara
+Randunu
+
+:-)
+
+Please Select Button Below ,
 `,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'JF_FUNERAL',
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
                                     url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'Sew_Queen',
+                                displayText: '🧚‍♀️sᴇᴡ ǫᴜᴇᴇɴ',
                                     url: 'https://chat.whatsapp.com/EbH3web64lTExFrWunvGoN'
                                 }
                             }, {
@@ -2506,15 +2631,30 @@ Please Select Button Below
                     }
                 }), { userJid: m.chat })
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                
+               {
+            const devsound = fs.readFileSync('./XeonMedia/menu.mp3')
+           XeonBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
+           }
+           
                 }
+                
+                break
+                
+                
+                
+                case 'yaka' : case 'thiricana' : case 'gagana' : case 'krishan' : case 'jayashan' : case 'sik' : case 'dilshan' : case 'sathsara' :{
+            const devsound = fs.readFileSync('./XeonMedia/menu.mp3')
+           XeonBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
+           }
 break
-case 'command':{
+case 'command' : case 'listmenu' :{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
-                    footerText: "_Jayarathne_Technical_",
+                    footerText: "ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ",
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Group Features",
@@ -2573,6 +2713,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 											"title": "Voice Changer Menu",
 										"description": "Displays The List Of Voice Changing Features",
 										"rowId": `${prefix}voicemenu`
+										},
+										{
+											"title": "Jayarathne",
+										"description": "I'm Jayarathne Technical. He He",
+										"rowId": `${prefix}owner`
 										}
 								]
 							},
@@ -2622,6 +2767,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }), {})
             XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
+            
+            {
+            const devsound = fs.readFileSync('./XeonMedia/menu.mp3')
+           XeonBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
+           }
+           
             break
 case 'grupmenu': {
 	            anu = `
@@ -2645,16 +2796,16 @@ case 'grupmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'JF_FUNERAL',
-                                    url: 'error'
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Download Menu',
-                                    id: `${prefix}downloadmenu`
+                                    displayText: 'Main menu',
+                                    id: `${prefix}allmenu`
                                 }
                             }]
                         }
@@ -2687,16 +2838,16 @@ case 'downloadmenu': {
                             hydratedContentText: okemenu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Thiricana',
-                                    url: 'Error'
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Download Menu',
-                                    id: `${prefix}downloadmenu`
+                                    displayText: 'Main Menu',
+                                    id: `${prefix}allmenu`
                                 }
                             }]
                         }
@@ -2724,16 +2875,16 @@ case 'downloadmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Thiricana',
-                                    url: 'https://youtu.be/ids'
+                                    displayText: 'ᴊᴀʏᴀʀᴀᴛʜɴᴇ ғᴜɴᴇʀᴀʟ',
+                                    url: 'https://chat.whatsapp.com/JE6kSDzCnBr1xDJ9MVxaZ1'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Thiricana',
-                                    id: `${prefix}play gagana`
+                                    displayText: 'Main Menu',
+                                    id: `${prefix}listmenu`
                                 }
                             }]
                         }
@@ -2755,7 +2906,7 @@ case 'randommenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Thiricana',
@@ -2787,7 +2938,7 @@ case 'funmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Thiricana',
@@ -2827,7 +2978,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Thiricana',
@@ -2861,7 +3012,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Thiricana',
@@ -2919,7 +3070,7 @@ case 'horoscopemenukcodk': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Thiricana',
@@ -2957,7 +3108,7 @@ case 'convertmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Thiricana',
@@ -2997,7 +3148,7 @@ case 'nocategorymenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Yerror',
@@ -3034,7 +3185,7 @@ case 'databasemenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
@@ -3066,7 +3217,7 @@ case 'anonymouschatmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Sorry Babu',
@@ -3098,7 +3249,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
@@ -3135,7 +3286,7 @@ break
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube',
@@ -3155,128 +3306,296 @@ break
 break
   case 'allmenu': {
   	anu = `
-  *All Menu*
-  
-  ꪶGroup Menuꫂ
-  ➙ ${prefix}grouplink
-  ➙ ${prefix}ephemeral [option]
-  ➙ ${prefix}setgrouppp
-  ➙ ${prefix}setname [text]
-  ➙ ${prefix}group [option]
-  ➙ ${prefix}editinfo [option]
-  ➙ ${prefix}grupinfo
-  ➙ ${prefix}add @user
-  ➙ ${prefix}kick @user
-  ➙ ${prefix}promote @user
-  ➙ ${prefix}demote @user
-  
-  ꪶDownload Menuꫂ
-  ➙ ${prefix}tiktoknowm [url]
-  ➙ ${prefix}tiktokwm [url]
-  ➙ ${prefix}tiktokmp3 [url]
-  ➙ ${prefix}instagram [url]
-  ➙ ${prefix}ig2 [url]
-  ➙ ${prefix}igreels [url]
-  ➙ ${prefix}igtv [url]
-  ➙ ${prefix}twitter [url]
-  ➙ ${prefix}twittermp3 [url]
-  ➙ ${prefix}ytmp3 [url]
-  ➙ ${prefix}ytmp4 [url]
-  ➙ ${prefix}getmusic [query]
-  ➙ ${prefix}getvideo [query
-  
-  ꪶSearch Menuꫂ
-  ➙ ${prefix}play [query]
-  ➙ ${prefix}yts [query]
-  ➙ ${prefix}google [query]
-  ➙ ${prefix}gimage [query]
-  ➙ ${prefix}pinterest [query]
-  ➙ ${prefix}wallpaper [query]
-  ➙ ${prefix}wikimedia [query]
-  ➙ ${prefix}ytsearch [query]
-  
-  ꪶRandom Menuꫂ
-  ➙ ${prefix}coffee
-  ➙ ${prefix}couplepp
-  
-  ꪶFun Menuꫂ
-  ➙ ${prefix}couple
-  ➙ ${prefix}mysoulmate
-  ➙ ${prefix}math [mode]  
-  
-  ꪶVoice Changer Menuꫂ
-  ➙ ${prefix}bass
-  ➙ ${prefix}blown
-  ➙ ${prefix}deep
-  ➙ ${prefix}earrape
-  ➙ ${prefix}fast
-  ➙ ${prefix}fat
-  ➙ ${prefix}nightcore
-  ➙ ${prefix}reverse
-  ➙ ${prefix}robot
-  ➙ ${prefix}slow
-  ➙ ${prefix}squirrel
-   
-  ꪶConvert Menuꫂ
-  ➙ ${prefix}toimage
-  ➙ ${prefix}removebg
-  ➙ ${prefix}sticker
-  ➙ ${prefix}emojimix
-  ➙ ${prefix}tovideo
-  ➙ ${prefix}togif
-  ➙ ${prefix}tourl
-  ➙ ${prefix}ebinary
-  ➙ ${prefix}dbinary
-  
-  ꪶMisc Menuꫂ
-  ➙ ${prefix}ping
-  ➙ ${prefix}downloadmenu
-  ➙ ${prefix}donate
-  ➙ ${prefix}menu / ${prefix}help / ${prefix}?
-  ➙ ${prefix}delete
-  ➙ ${prefix}chatinfo
-  ➙ ${prefix}quoted
-  ➙ ${prefix}listpc
-  ➙ ${prefix}listgc
-  ➙ ${prefix}listonline
-  ➙ ${prefix}report (report bug to owner)
-  
-  ꪶDatabase Menuꫂ
-  ➙ ${prefix}setcmd
-  ➙ ${prefix}listcmd
-  ➙ ${prefix}delcmd
-  ➙ ${prefix}lockcmd
-  ➙ ${prefix}addmsg
-  ➙ ${prefix}listmsg
-  ➙ ${prefix}getmsg
-  ➙ ${prefix}delmsg
-  
-  ꪶAnonymous Menuꫂ
-  ➙ ${prefix}start ( Start Chat )
-  ➙ ${prefix}next ( Next user )
-  ➙ ${prefix}stop ( stop Anonymous chat )
-  
-  ꪶSystem Menuꫂ
-  ➙ ${prefix}antilink On/Off
-  ➙ ${prefix}mute On/Off
-  ➙ ${prefix}antiwame On/Off
-  
-  ꪶOwner Menuꫂ
-  ➙ ${prefix}chat [option]
-  ➙ ${prefix}join [link]
-  ➙ ${prefix}leave
-  ➙ ${prefix}setbotpp
-  ➙ ${prefix}block @user
-  ➙ ${prefix}unblock @user
-  ➙ ${prefix}bcgroup
-  ➙ ${prefix}bcall`
+  │ 
+│◮ ${prefix}linkgroup
+│◮ ${prefix}ephemeral [option]
+│◮ ${prefix}setppgc [image]
+│◮ ${prefix}setname [text]
+│◮ ${prefix}setdesc [text]
+│◮ ${prefix}group [option]
+│◮ ${prefix}editinfo [option]
+│◮ ${prefix}add @user
+│◮ ${prefix}kick @user
+│◮ ${prefix}hidetag [text]
+│◮ ${prefix}tagall [text]
+│◮ ${prefix}antilink [on/off]
+│◮ ${prefix}mute [on/off]
+│◮ ${prefix}promote @user
+│◮ ${prefix}demote @user
+│◮ ${prefix}vote [text]
+│◮ ${prefix}devote
+│◮ ${prefix}upvote
+│◮ ${prefix}cekvote
+│◮ ${prefix}hapusvote
+│
+└───────⭓
+┌──⭓ *Downloader Menu*
+│
+│◮ ${prefix}tiktoknowm [url]
+│◮ ${prefix}tiktokwm [url]
+│◮ ${prefix}tiktokmp3 [url]
+│◮ ${prefix}instagram [url]
+│◮ ${prefix}twitter [url]
+│◮ ${prefix}twittermp3 [url]
+│◮ ${prefix}facebook [url]
+│◮ ${prefix}pinterestdl [url]
+│◮ ${prefix}ytmp3 [url]
+│◮ ${prefix}ytmp4 [url]
+│◮ ${prefix}getmusic [query]
+│◮ ${prefix}getvideo [query]
+│◮ ${prefix}umma [url]
+│◮ ${prefix}joox [query]
+│◮ ${prefix}soundcloud [url]
+│
+└───────⭓
+┌──⭓ *Search Menu*
+│
+│◮ ${prefix}play [query]
+│◮ ${prefix}yts [query]
+│◮ ${prefix}google [query]
+│◮ ${prefix}gimage [query]
+│◮ ${prefix}pinterest [query]
+│◮ ${prefix}wallpaper [query]
+│◮ ${prefix}wikimedia [query]
+│◮ ${prefix}ytsearch [query]
+│◮ ${prefix}ringtone [query]
+│◮ ${prefix}stalk [option] [query]
+│
+└───────⭓
+┌──⭓ *Random Menu*
+│
+│◮ ${prefix}coffe
+│◮ ${prefix}quotesanime
+│◮ ${prefix}motivasi
+│◮ ${prefix}dilanquote
+│◮ ${prefix}bucinquote
+│◮ ${prefix}katasenja
+│◮ ${prefix}puisi
+│◮ ${prefix}couple
+│◮ ${prefix}anime
+│◮ ${prefix}waifu
+│◮ ${prefix}husbu
+│◮ ${prefix}neko
+│◮ ${prefix}shinobu
+│◮ ${prefix}waifus (nsfw)
+│◮ ${prefix}nekos (nsfw)
+│◮ ${prefix}trap (nsfw)
+│◮ ${prefix}blowjob (nsfw)
+│
+└───────⭓
+┌──⭓ *Text Pro Menu*
+│
+│◮ ${prefix}3dchristmas
+│◮ ${prefix}3ddeepsea
+│◮ ${prefix}americanflag
+│◮ ${prefix}3dscifi
+│◮ ${prefix}3drainbow
+│◮ ${prefix}3dwaterpipe
+│◮ ${prefix}halloweenskeleton
+│◮ ${prefix}sketch
+│◮ ${prefix}bluecircuit
+│◮ ${prefix}space
+│◮ ${prefix}metallic
+│◮ ${prefix}fiction
+│◮ ${prefix}greenhorror
+│◮ ${prefix}transformer
+│◮ ${prefix}berry
+│◮ ${prefix}thunder
+│◮ ${prefix}magma
+│◮ ${prefix}3dcrackedstone
+│◮ ${prefix}3dneonlight
+│◮ ${prefix}impressiveglitch
+│◮ ${prefix}naturalleaves
+│◮ ${prefix}fireworksparkle
+│◮ ${prefix}matrix
+│◮ ${prefix}dropwater
+│◮ ${prefix}harrypotter
+│◮ ${prefix}foggywindow
+│◮ ${prefix}neondevils
+│◮ ${prefix}christmasholiday
+│◮ ${prefix}3dgradient
+│◮ ${prefix}blackpink
+│◮ ${prefix}gluetext
+│
+└───────⭓
+┌──⭓ *Photo Oxy Menu*
+│
+│◮ ${prefix}shadow
+│◮ ${prefix}romantic
+│◮ ${prefix}smoke
+│◮ ${prefix}burnpapper
+│◮ ${prefix}naruto
+│◮ ${prefix}lovemsg
+│◮ ${prefix}grassmsg
+│◮ ${prefix}lovetext
+│◮ ${prefix}coffecup
+│◮ ${prefix}butterfly
+│◮ ${prefix}harrypotter
+│◮ ${prefix}retrolol
+│
+└───────⭓
+┌──⭓ *Ephoto Menu*
+│
+│◮ ${prefix}ffcover
+│◮ ${prefix}crossfire
+│◮ ${prefix}galaxy
+│◮ ${prefix}glass
+│◮ ${prefix}neon
+│◮ ${prefix}beach
+│◮ ${prefix}blackpink
+│◮ ${prefix}igcertificate
+│◮ ${prefix}ytcertificate
+│
+└───────⭓
+┌──⭓ *Fun Menu*
+│
+│◮ ${prefix}halah
+│◮ ${prefix}hilih
+│◮ ${prefix}huluh
+│◮ ${prefix}heleh
+│◮ ${prefix}holoh
+│◮ ${prefix}jadian
+│◮ ${prefix}jodohku
+│◮ ${prefix}delttt
+│◮ ${prefix}tictactoe
+│◮ ${prefix}family100
+│◮ ${prefix}tebak [option]
+│◮ ${prefix}math [mode]
+│◮ ${prefix}suitpvp [@tag]
+│
+└───────⭓
+┌──⭓ *Primbon Menu*
+│
+│◮ ${prefix}nomorhoki
+│◮ ${prefix}artimimpi
+│◮ ${prefix}artinama
+│◮ ${prefix}ramaljodoh
+│◮ ${prefix}ramaljodohbali
+│◮ ${prefix}suamiistri
+│◮ ${prefix}ramalcinta
+│◮ ${prefix}cocoknama
+│◮ ${prefix}pasangan
+│◮ ${prefix}jadiannikah
+│◮ ${prefix}sifatusaha
+│◮ ${prefix}rezeki
+│◮ ${prefix}pekerjaan
+│◮ ${prefix}nasib
+│◮ ${prefix}penyakit
+│◮ ${prefix}tarot
+│◮ ${prefix}fengshui
+│◮ ${prefix}haribaik
+│◮ ${prefix}harisangar
+│◮ ${prefix}harisial
+│◮ ${prefix}nagahari
+│◮ ${prefix}arahrezeki
+│◮ ${prefix}peruntungan
+│◮ ${prefix}weton
+│◮ ${prefix}karakter
+│◮ ${prefix}keberuntungan
+│◮ ${prefix}memancing
+│◮ ${prefix}masasubur
+│◮ ${prefix}zodiak
+│◮ ${prefix}shio
+│
+└───────⭓
+┌──⭓ *Convert Menu*
+│
+│◮ ${prefix}toimage
+│◮ ${prefix}removebg
+│◮ ${prefix}sticker
+│◮ ${prefix}emojimix
+│◮ ${prefix}tovideo
+│◮ ${prefix}togif
+│◮ ${prefix}tourl
+│◮ ${prefix}tovn
+│◮ ${prefix}tomp3
+│◮ ${prefix}toaudio
+│◮ ${prefix}ebinary
+│◮ ${prefix}dbinary
+│◮ ${prefix}styletext
+│◮ ${prefix}smeme
+│
+└───────⭓
+┌──⭓ *Main Menu*
+│
+│◮ ${prefix}ping
+│◮ ${prefix}owner
+│◮ ${prefix}menu / ${prefix}help / ${prefix}?
+│◮ ${prefix}delete
+│◮ ${prefix}infochat
+│◮ ${prefix}quoted
+│◮ ${prefix}listpc
+│◮ ${prefix}listgc
+│◮ ${prefix}listonline
+│◮ ${prefix}speedtest
+│
+└───────⭓
+┌──⭓ *Database Menu*
+│
+│◮ ${prefix}setcmd
+│◮ ${prefix}listcmd
+│◮ ${prefix}delcmd
+│◮ ${prefix}lockcmd
+│◮ ${prefix}addmsg
+│◮ ${prefix}listmsg
+│◮ ${prefix}getmsg
+│◮ ${prefix}delmsg
+│
+└───────⭓
+┌──⭓ *Anonymous Menu*
+│
+│◮ ${prefix}anonymous
+│◮ ${prefix}start
+│◮ ${prefix}next
+│◮ ${prefix}keluar
+│◮ ${prefix}sendkontak
+│
+└───────⭓
+┌──⭓ *Islamic Menu*
+│
+│◮ ${prefix}iqra
+│◮ ${prefix}hadist
+│◮ ${prefix}alquran
+│◮ ${prefix}juzamma
+│◮ ${prefix}tafsirsurah
+│
+└───────⭓
+┌──⭓ *Voice Changer*
+│
+│◮ ${prefix}bass
+│◮ ${prefix}blown
+│◮ ${prefix}deep
+│◮ ${prefix}earrape
+│◮ ${prefix}fast
+│◮ ${prefix}fat
+│◮ ${prefix}nightcore
+│◮ ${prefix}reverse
+│◮ ${prefix}robot
+│◮ ${prefix}slow
+│◮ ${prefix}tupai
+│
+└───────⭓
+┌──⭓ *Owner Menu*
+│
+│◮ ${prefix}react [emoji]
+│◮ ${prefix}chat [option]
+│◮ ${prefix}join [link]
+│◮ ${prefix}leave
+│◮ ${prefix}block @user
+│◮ ${prefix}unblock @user
+│◮ ${prefix}bcgroup [text]
+│◮ ${prefix}bcall [text]
+│◮ ${prefix}setppbot [image]
+│◮ ${prefix}setexif
+│
+└───────⭓`
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Jayarathne_Technical`,
+                            hydratedFooterText: `ᴊᴀʏᴀʀᴀᴛʜɴᴇ_ᴛᴇᴄʜɴɪᴄᴀʟ`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube',
