@@ -2818,12 +2818,14 @@ case 'downloadmenu': {
 	okemenu = `
 	*Downloader Menu*
   
-  ➙ ${prefix}tiktoknowm [url]
+   ➙ ${prefix} yt [name]
+  ➙ ${prefix} song [name]
+  ➙ ${prefix} video [name]
   ➙ ${prefix}tiktokwm [url]
   ➙ ${prefix}tiktokmp3 [url]
   ➙ ${prefix}instagram [url]
   ➙ ${prefix}ig2 [url]
-  ➙ ${prefix}igreels [url]
+  ➙ ${prefix}tiktoknowm [url]
   ➙ ${prefix}igtv [url]
   ➙ ${prefix}twitter [url]
   ➙ ${prefix}twittermp3 [url]
