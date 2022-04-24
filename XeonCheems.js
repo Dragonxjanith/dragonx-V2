@@ -1561,7 +1561,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
             }
             
             break 
-            case 'song': case 'asong' : case 'audio' : case 'music' : case 's' : {
+            case 'song': case 'asong' : case 'aud' : case 'music' : case 's' : {
                 if (!text) throw `Example : ${prefix + command} Gota Gobbaya`
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -3192,7 +3192,7 @@ case 'databasemenu': {
                                 urlButton: {
                                     displayText: '#GOHOMEGOTA',
                                     url: 'https://youtu.#GOHOMEGOTA'
-                                }
+                                }case 'allmenu
                             }, {
                                 quickReplyButton: {
                                     displayText: '#GOHOMEGOTA',
