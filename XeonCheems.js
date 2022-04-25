@@ -2944,13 +2944,13 @@ Join Now - Sl CYber
             
             break
            
-           case 'dilshan': case 'happy' : case 'sik' : case 'hbd' : case 'jf' : case 'cyber' :{
+           case 'dilshan': case 'happy' : case 'sik' : case 'hbd' : case 'jf' : case 'cyber' : case 'dila' : {
 	anu = `
 *HAPPY BIRTHDAY DILSHAN*
   
 Sachi Happy Birthday to You 🥳 🥳
 
-@94772601056
+@+94772601056
 
 Best Wishes from Sl_Cyber and Jf Team
   `
@@ -2964,7 +2964,7 @@ Best Wishes from Sl_Cyber and Jf Team
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Wish Dilshan 🥳',
-                                    url: 'https://wa.me/94772601056?text=Happy+Birthday+Sir🥳'
+                                    url: 'https://wa.me/+94772601056?text=Happy+Birthday+Sir🥳'
                                 }
                             }, {
                                 quickReplyButton: {
