@@ -35,7 +35,7 @@ global.prefa = ['#','!','/',''] //prefix
 global.sp = '🍂' //design
 global.mess = {
     success: 'Done ✓',
-    admin: 'This Feature Is Only For @Jayarathne!',
+    admin: 'This Feature Is Only For Group Admin!',
     botAdmin: 'Bot Must Be Admin First!',
     owner: 'This Feature Is Only For @Jayarathne',
     group: 'Feature Used Only For Groups!',
