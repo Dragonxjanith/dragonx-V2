@@ -1287,6 +1287,7 @@ case 'antilink':
             }
 	    break
             case 'listpc': {
+            if (!isBotAdmins) throw mess.botAdmin
                  let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v.id)
                  let teks = `⬣ *PERSONAL CHAT LIST*\n\nTotal Chat : ${anu.length} Chat\n\n`
                  for (let i of anu) {
@@ -1297,6 +1298,7 @@ case 'antilink':
              }
              break
                 case 'listgc': {
+                if (!isBotAdmins) throw mess.botAdmin
                  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
                  let teks = `⬣ *GROUP CHAT LIST*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
@@ -3004,9 +3006,9 @@ Best Wishes from Sl_Cyber and Jf Team
              
              break
            
-           case 'ehi': case 'ehiyak' : case 'free' : case 'internet' : case 'dialog' : case 'mobitel' : case 'hutch' : {
+           case 'ehi': case 'ehiyak' : case 'free' : case 'internet' : case 'dialog' : case 'mobitel' : case 'hutch' : case 'gagana' :  {
 	anu = `
-*SL CYBER EHI*
+*Sl Cyber*
   
 Ultra Speed Premium ehi :-)
 
@@ -3019,7 +3021,7 @@ https://chat.whatsapp.com/JRC8ZcB5v4n9OyXFVYmDHM
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./XeonMedia/ehi.jpg')},
+                            jpegThumbnail: fs.readFileSync('./XeonMedia/ehi1.jpg')},
                             hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3088,7 +3090,7 @@ https://chat.whatsapp.com/HiJ6FtfmsA4Iy8YoSEzvPC
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./XeonMedia/happy.jpg')},
+                            jpegThumbnail: fs.readFileSync('./XeonMedia/urt.jpg')},
                             hydratedFooterText: `Jayarathne_Technical`,
                             hydratedButtons: [{
                                 urlButton: {
